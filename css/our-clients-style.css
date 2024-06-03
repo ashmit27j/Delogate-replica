@@ -1,0 +1,5 @@
+p:hover::before {
+  content: "text to insert";
+  /* other styles */
+  background-color: red;
+}
