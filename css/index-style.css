@@ -2,6 +2,10 @@ body {
   margin: 0px;
 }
 
+* {
+  font-family: outfit;
+}
+
 #root {
   --rem: 16px;
   --background-color: #f0f0f0;
@@ -191,6 +195,7 @@ a::hover {
     position: relative;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
     gap: 2rem;
     img {
       width: 100px;
@@ -212,6 +217,7 @@ a::hover {
         font-size: 0.8rem;
         font-weight: 300;
         text-align: center;
+        line-height: 1.4rem;
       }
     }
   }
@@ -239,12 +245,13 @@ a::hover {
 }
 
 .full-stack {
+  padding: 5rem 0rem;
   p {
     font-size: 3rem;
     font-weight: 450;
     color: var(--black1);
     text-align: center;
-    padding: 0px 23rem;
+    padding: 0rem 23rem;
   }
   span {
     color: var(--red);
@@ -256,18 +263,182 @@ a::hover {
   grid-template-rows: auto auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
-  padding: 10rem;
+  padding: 0px 10rem;
+  padding-top: 2rem;
 }
 
 .grid-item {
-  background-color: var(--background-color);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
+  gap: 1rem;
+  justify-content: space-between;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
   p {
-    font-size: 1.5rem;
-    font-weight: 450;
+    font-size: 1.8rem;
+    font-weight: 550;
     color: var(--black1);
     padding: 0px;
     margin: 0px;
   }
+  span {
+    color: var(--subtitle);
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+}
+.techstack {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cta-backgroundColor);
+}
+.techstack-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px;
+  align-items: center;
+  p {
+    width: 30rem;
+    margin: 0rem;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+  }
+  span {
+    width: 25rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+  }
+}
+.techstack-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 5rem;
+}
+.techstack-images {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+/* .techstack-images:hover {
+  cursor: pointer;
+  backdrop-filter: blur(0);
+  background: linear-gradient(180deg, #34343400 66.4%, #343434);
+  position: absolute;
+  transition: 0.3s ease-in-out;
+} */
+
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  width: 300px;
+  p {
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+.process {
+  padding: 5rem 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mainBg);
+}
+
+.process-text {
+  p {
+    margin: 0px;
+    padding: 0px 20px 50px 0px;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--black1);
+    text-align: center;
+  }
+  span {
+    color: var(--red);
+  }
+}
+.step-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 310px;
+  align-items: center;
+  p {
+    margin: 0rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--black1);
+    padding-bottom: 20px;
+  }
+}
+
+.line-div {
+  position: relative;
+  height: 2px;
+  background-color: var(--black1);
+  margin: 20px 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle {
+  margin: 65px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: var(--cta-backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.process-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px;
+}
+
+.process-card {
+  width: 20rem;
+  padding: 0px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.process-number {
+  color: var(--foregroundPastel);
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.process-title {
+  color: var(--cta-backgroundColor);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0px;
+}
+.process-desc {
+  color: var(--darkGray);
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0px;
 }
