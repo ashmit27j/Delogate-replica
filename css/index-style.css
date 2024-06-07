@@ -13,6 +13,7 @@ body {
   --cta-backgroundColor: #362466;
   --foregroundPastel: #ecedfeff;
   --mainBg: #f6f7f8;
+  --white-background: #ffffff;
   --black1: #01021eff;
   --black2: #17011eff;
   --black3: #0a0d4bff;
@@ -36,9 +37,11 @@ body {
 }
 
 header {
-  box-shadow: 0 4px 100px #00000024;
+  width: 100%;
+  position: fixed;
   z-index: 100;
-  position: sticky;
+  background-color: var(--white-background);
+  box-shadow: 0 4px 100px #00000024;
 }
 
 .container {
@@ -125,12 +128,13 @@ a::hover {
 
 .hero-banner {
   z-index: -1;
-  height: 560px;
+  height: 100%;
   background-color: var(--mainBg);
   padding: 90px 20px;
 
   display: flex;
-  justify-content: row;
+  flex-shrink: 10;
+  align-items: center;
 }
 
 .hero-banner-left {
